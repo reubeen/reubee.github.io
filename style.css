@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+  }
+#wrapper {
+    min-width: 320px;
+    overflow: hidden;
+}
+body{
+ background-color: bisque;
+    height: 100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header{
+    background-color: #333;
+   position: sticky;
+   justify-content: space-between; 
+   width:100%;
+   padding: 0 30px;
+}
+nav {
+    display: flex;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px
+  }
+  
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 85%;
+
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .hero {
+    background-image: url('./assets/coffee.avif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: rgb(0, 191, 255);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #d02;
+  }
+  /*Card */
+  .lunch-menu {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    
+  }
+  
+  .lunch-menu h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 30%;
+    padding: 20px;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .card .price {
+    font-weight: bold;
+    color: #f04;
+    margin-top: 10px;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .address,
+  .hours,
+  .contact {
+    flex-basis: 30%;
+    margin-bottom: 30px;
+  }
+  
+  .address p,
+  .hours p,
+  .contact p {
+    margin-bottom: 10px;
+  }
+  
+  .back-to-top {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-to-top:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  /* responsive design using media query*/
+  /*nav bar*/
+  @media screen and (max-width: 600px) {
+    nav {
+      flex-direction: column;
+    }
+    
+    nav ul {
+      flex-direction: column;
+    }
+    
+    nav li {
+      margin: 10px 0;
+      font-size: 14px;
+    }
+    .card {
+        width: calc(50% - 25px);
+        padding: 20px;
+      
+      }
+      lunch-menu {
+        gap: 30px;
+      }
+  }
+ 
